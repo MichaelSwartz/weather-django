@@ -1,4 +1,5 @@
 db.sqlite3
+weatherchallenge/settings.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

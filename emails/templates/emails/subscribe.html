@@ -6,6 +6,13 @@
 <body>
     <div class='row'>
         <div class='columns'>
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li><b>{{ message }}<b></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
             <h2>Subscribe!</h2>
             <form action="" method="post">{% csrf_token %}
                 {{ form.as_p }}
